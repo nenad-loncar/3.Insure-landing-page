@@ -44,11 +44,18 @@
                 </p>
                 <button class="button intro_content--button">VIEW PLAN</button>
             </article>
-            <img class="intro_content--leftPattern" src="assets/img/patterns/bg-pattern-intro-left-desktop.svg"
-                alt="right pattern">
-            <img class="intro_content--introImg" src="assets/img/image-intro-desktop.jpg" alt="intro img">
-            <img class="intro_content__rightPattern" src="assets/img/patterns/bg-pattern-intro-right-desktop.svg"
-                alt="left pattern">
+            <picture class="intro_content--leftPattern">
+                <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-left-desktop.svg">
+                <img src="assets/img/patterns/bg-pattern-intro-left-desktop.svg" alt="pattern" style="width:auto;">
+            </picture>
+            <picture class="intro-img">
+                <source media="(max-width:375px)" srcset="assets/img/image-intro-mobile.jpg">
+                <img class="intro_content--introImg" src="assets/img/image-intro-desktop.jpg" alt="intro img">
+            </picture>
+            <picture class="intro_content--rightPattern">
+                <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-right-mobile.svg">
+                <img src="assets/img/patterns/bg-pattern-intro-right-desktop.svg" alt="pattern" style="width:auto;">
+            </picture>
         </div>
     </section>
     <!-- end of hero section-->
@@ -85,5 +92,21 @@
         </div>
     </section>
     <!-- end of different section -->
+    <!-- find out section -->
+    <section class="findOut">
+        <div class="container">
+            <div class="findOut--left">
+                <h2>Find out more about how we work</h2>
+            </div>
+            <picture class="findOut--pattern">
+                <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-how-we-work-mobile.svg">
+                <img src="assets/img/patterns/bg-pattern-how-we-work-desktop.svg" alt="pattern" style="width:auto;">
+            </picture>
+            <div class="findOut--right">
+               <button class="button findOut--button">HOW WE WORK</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of find out section -->
 </body>
 </html>
