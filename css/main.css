@@ -5,6 +5,8 @@ INSUER LANDING PAGE CSS
     1.1 css reset
     1.2 typography
     1.3 css variables
+    1.4 global
+    1.5 state
 2. Layout
     2.1 header
 3. Specific styles
@@ -49,6 +51,14 @@ a {
     src: url('../assets/fonts/Karla-Regular.ttf');
 }
 
+.nav-menu--item,.button {
+    font-family: Karla;
+}
+
+.button {
+    font-size: 1rem;
+}
+
 /*** css variables ***/
 
 :root {
@@ -59,14 +69,86 @@ a {
     --very-light-gray: hsl(0, 0%, 98%);
 }
 
+/*** global ***/
+
+.hamburger-container {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.nav-menu--button {
+   padding: 0 1em;
+   border: 2px solid var(--very-dark-violet);
+}
+
+.nav-menu--button > a {
+    color: var(--very-dark-violet);
+}
+
+/*** states ***/
+
+.nav-menu--button:hover {
+    background-color: var(--very-dark-violet);
+    transition: all ease 1s;
+}
+
+.nav-menu--button:hover > a {
+    color: var(--very-light-gray);
+}
+
 /***********************************************
                 Layout
 ***********************************************/
-/*** header ***/
+.main-header {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
 
 /**************************************************
                 Specific styles
 ***************************************************/
+
+/*** header ***/
+.main-header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.nav-menu--item {
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav-menu--item > a {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-menu--item:not(:last-child) > a {
+    color: var(--dark-grayish-violet);
+}
+
 
 /***************************************************
                 Helper classes
@@ -75,6 +157,11 @@ a {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.list-reset {
+    list-style-type: none;
+}
+
 /***************************************************
                 Responsive 
 ****************************************************/
