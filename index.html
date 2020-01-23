@@ -33,6 +33,10 @@
     <!-- end of header -->
     <!-- hero section -->
     <section class="intro">
+        <picture class="intro_content--rightPattern">
+            <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-right-mobile.svg">
+            <img src="assets/img/patterns/bg-pattern-intro-right-desktop.svg" alt="pattern" style="width:auto;">
+        </picture>
         <div class="container">
             <article class="intro_content">
                 <hr class="line">
@@ -44,21 +48,19 @@
                 </p>
                 <button class="button intro_content--button">VIEW PLAN</button>
             </article>
-            <picture class="intro_content--leftPattern">
-                <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-left-desktop.svg">
-                <img src="assets/img/patterns/bg-pattern-intro-left-desktop.svg" alt="pattern" style="width:auto;">
-            </picture>
             <picture class="intro-img">
                 <source media="(max-width:375px)" srcset="assets/img/image-intro-mobile.jpg">
                 <img class="intro_content--introImg" src="assets/img/image-intro-desktop.jpg" alt="intro img">
             </picture>
-            <picture class="intro_content--rightPattern">
-                <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-right-mobile.svg">
-                <img src="assets/img/patterns/bg-pattern-intro-right-desktop.svg" alt="pattern" style="width:auto;">
-            </picture>
         </div>
     </section>
     <!-- end of hero section-->
+    <!-- pattern left -->
+    <picture class="intro_content--leftPattern">
+        <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-intro-left-desktop.svg">
+        <img src="assets/img/patterns/bg-pattern-intro-left-desktop.svg" alt="pattern" style="width:auto;">
+    </picture>
+    <!-- end pattern left-->
     <!-- different section -->
     <section class="different">
         <div class="container">
@@ -108,5 +110,60 @@
         </div>
     </section>
     <!-- end of find out section -->
+    <!-- footer -->
+    <footer>
+        <picture class="footer--pattern">
+            <source media="(max-width: 375px)" srcset="assets/img/patterns/bg-pattern-footer-mobile.svg">
+            <img src="assets/img/patterns/bg-pattern-footer-desktop.svg" alt="pattern" style="width:auto;">
+        </picture>
+        <div class="container">
+            <header class="footer-header">
+                <a class="logo" href="index.html"><img src="assets/img/logo/logo.svg" alt="logo"></a>
+                <div class="social-media-container">
+                    <a href="#"><img src="assets/icons/icon-facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="assets/icons/icon-twitter.svg" alt="twiter"></a>
+                    <a href="#"><img src="assets/icons/icon-pinterest.svg" alt="pinterest"></a>
+                    <a href="#"><img src="assets/icons/icon-instagram.svg" alt="instagram"></a>  
+                </div>
+            </header>
+            <div class="footerLinks">
+               <div class="footerLinks--item">
+                   <h4>OUR COMPANY</h4>
+                   <ul class="footer_linkContainer">
+                       <li><a class="footer--link" href="#">HOW WE WORK</a></li>
+                       <li><a class="footer--link" href="#">WHY INSURE?</a></li>
+                       <li><a class="footer--link" href="#">VIEW PLANS</a></li>
+                       <li><a class="footer--link" href="#">REVIEWS</a></li>
+                   </ul>
+               </div>
+               <div class="footerLinks--item">
+                    <h4>HELP ME</h4>
+                    <ul class="footer_linkContainer">
+                        <li><a class="footer--link" href="#">FAQ</a></li>
+                        <li><a class="footer--link" href="#">THERMS OF USE</a></li>
+                        <li><a class="footer--link" href="#">PRIVACY POLICY</a></li>
+                        <li><a class="footer--link" href="#">COOKIES</a></li>
+                    </ul>
+               </div>
+               <div class="footerLinks--item">
+                    <h4>CONTACT</h4>
+                    <ul class="footer_linkContainer">
+                        <li><a class="footer--link" href="#">SALES</a></li>
+                        <li><a class="footer--link" href="#">SUPPORT</a></li>
+                        <li><a class="footer--link" href="#">LIVE CHAT</a></li>
+                    </ul>
+               </div>
+               <div class="footerLinks--item">
+                    <h4>OTHERS</h4>
+                    <ul class="footer_linkContainer">
+                        <li><a class="footer--link" href="#">CAREERS</a></li>
+                        <li><a class="footer--link" href="#">PRESS</a></li>
+                        <li><a class="footer--link" href="#">LICENSES</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
 </body>
 </html>
