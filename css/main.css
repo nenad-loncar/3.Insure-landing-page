@@ -1,12 +1,12 @@
 /************************************************
-PRODUCT LANDING PAGE CSS
+INSUER LANDING PAGE CSS
 
 1. Global styles
     1.1 css reset
     1.2 typography
-    1.3 css variable
-    
+    1.3 css variables
 2. Layout
+    2.1 header
 3. Specific styles
 4. Helper classes
 5. Responsive
@@ -62,7 +62,7 @@ a {
 /***********************************************
                 Layout
 ***********************************************/
-
+/*** header ***/
 
 /**************************************************
                 Specific styles
@@ -71,7 +71,10 @@ a {
 /***************************************************
                 Helper classes
 ****************************************************/
-
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /***************************************************
                 Responsive 
 ****************************************************/
