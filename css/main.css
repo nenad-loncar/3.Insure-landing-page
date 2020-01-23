@@ -51,12 +51,22 @@ a {
     src: url('../assets/fonts/Karla-Regular.ttf');
 }
 
-.nav-menu--item,.button {
+.nav-menu--item,
+.button, 
+.intro_content--button,
+p {
     font-family: Karla;
 }
 
-.button {
+.button, 
+.intro_content--button,
+p {
     font-size: 1rem;
+}
+
+h1 { 
+    font-size: 4.25rem;
+    font-family: Display;
 }
 
 /*** css variables ***/
@@ -79,19 +89,27 @@ a {
     text-decoration: none;
 }
 
+/*** buttons ***/
+
 .button {
     text-align: center;
     line-height: 40px;
     cursor: pointer;
 }
 
-.nav-menu--button {
+.nav-menu--button{
    padding: 0 1em;
    border: 2px solid var(--very-dark-violet);
 }
 
 .nav-menu--button > a {
     color: var(--very-dark-violet);
+}
+
+.intro_content--button {
+    padding: 0 2em;
+    background: none;
+    border: 2px solid var(--very-light-gray);
 }
 
 /*** states ***/
@@ -113,7 +131,9 @@ a {
     height: 80px;
 }
 
-
+.intro {
+    width: 100%;
+}
 
 
 
@@ -126,6 +146,7 @@ a {
 ***************************************************/
 
 /*** header ***/
+
 .main-header > .container {
     display: flex;
     align-items: center;
@@ -149,12 +170,63 @@ a {
     color: var(--dark-grayish-violet);
 }
 
+/*** intro ***/
 
+.intro {
+    position: relative;
+    background-color: var(--dark-violet);
+}
+
+.intro-rightPattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.intro > .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro_content {
+    margin-top: 8%;
+    width: 45%;
+    min-height: 550px;
+}
+
+.intro_content > h1 {
+    margin-top: 8%;
+    color: var(--very-light-gray);
+}
+
+.intro_content > p {
+    color: var(--very-light-gray);
+    margin: 5% 0;
+    text-align: left;
+}
+
+.intro_content--button {
+    color: var(--very-light-gray);
+}
+
+.intro-img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 0;
+}
+
+.intro-leftPattern {
+    position: absolute;
+    top: 70%;
+}
 /***************************************************
                 Helper classes
 ****************************************************/
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -162,6 +234,12 @@ a {
     list-style-type: none;
 }
 
+.line {
+    width: 30%;
+    height: 2px;
+    background-color: var(--very-light-gray);
+    display: block;
+}
 /***************************************************
                 Responsive 
 ****************************************************/
