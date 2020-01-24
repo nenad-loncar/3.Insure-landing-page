@@ -240,6 +240,7 @@ a {
 }
 
 /*** different ***/
+
 .different  {
     padding-top: 15%;
 }
@@ -258,8 +259,12 @@ a {
     display: flex;
 }
 
-.services_container--item {
-    padding: 0 1%;
+.services_container--item:not(:last-child) {
+    padding: 0 1% 0 0;
+}
+
+.services_container--item:last-child {
+    padding: 0 0 0 1%;
 }
 
 .services_container--item > h3 {
