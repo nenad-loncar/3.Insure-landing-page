@@ -64,9 +64,20 @@ p {
     font-size: 1rem;
 }
 
-h1 { 
-    font-size: 4.25rem;
+h1, h2, h3 { 
     font-family: Display;
+}
+
+h1 {
+    font-size: 4.25rem;
+}
+
+h2 {
+    font-size: 3.4375rem;
+}
+
+h3 {
+    font-size: 1.375rem;
 }
 
 /*** css variables ***/
@@ -135,10 +146,15 @@ a {
     width: 100%;
 }
 
+.different {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
 
-
-
-
+.services_container--item {
+    width: 33.3%;
+}
 
 
 /**************************************************
@@ -221,6 +237,44 @@ a {
 .intro-leftPattern {
     position: absolute;
     top: 70%;
+}
+
+/*** different ***/
+.different  {
+    padding-top: 15%;
+}
+
+.different > .container > .line {
+    width: 20%;
+    background-color: var(--dark-grayish-violet);
+}
+
+.different > .container > h2 {
+    color: var(--dark-violet);
+    margin: 6% 0 10%;
+}
+
+.services_container {
+    display: flex;
+}
+
+.services_container--item {
+    padding: 0 1%;
+}
+
+.services_container--item > h3 {
+    color: var(--dark-violet);
+    margin: 5% 0;
+}
+
+.services_container--item {
+    justify-content: flex-start;
+}
+
+.services_container--item > p {
+    color: var(--dark-grayish-violet);
+    text-align: left;
+    line-height: 180%;
 }
 /***************************************************
                 Helper classes
