@@ -54,6 +54,8 @@ a {
 .nav-menu--item,
 .button, 
 .intro_content--button,
+h4,
+.footer--linkss
 p {
     font-family: Karla;
 }
@@ -78,6 +80,14 @@ h2 {
 
 h3 {
     font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+.footer--link {
+    font-size: 0.75rem;
 }
 
 /*** css variables ***/
@@ -151,7 +161,10 @@ a {
     height: 80px;
 }
 
-.intro,.findOut{
+.intro,
+.findOut,
+footer,
+.footer_body--container {
     width: 100%;
 }
 
@@ -323,7 +336,67 @@ a {
     padding-left: 20%;
 }
 
+/*** footer ***/
 
+footer {
+    position: relative;   
+    background-color: var(--very-light-gray);
+    min-height: 400px;
+}
+
+.footer--pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.footer_body--container{
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6%;
+}
+
+.footer_body--container > .container > hr {
+    margin: 3% 0 4% 0;
+}
+
+.social-media-container  {
+    width: 30%;
+    text-align: right;
+}
+
+.social-media-container > a:not(:last-child) {
+    margin-right: 5%;
+}
+
+.footerLinks {
+    display: flex;
+}
+
+.footerLinks--item {
+    width: 25%;
+}
+
+.footerLinks--item  > h4 {
+    color: var(--grayish-blue);
+    margin-bottom: 6%
+}
+
+.footer--link {
+    color: var(--very-dark-violet);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer_linkContainer > li {
+    margin-bottom: 4%;
+}
 
 /***************************************************
                 Helper classes
@@ -343,6 +416,7 @@ a {
     background-color: var(--very-light-gray);
     display: block;
 }
+
 /***************************************************
                 Responsive 
 ****************************************************/
