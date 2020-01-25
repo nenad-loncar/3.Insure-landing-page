@@ -174,7 +174,9 @@ svg:hover {
     fill: var(--dark-violet);
 }
 
-
+.footer--link:hover {
+    text-decoration: underline;
+}
 
 /***********************************************
                 Layout
@@ -418,7 +420,7 @@ footer {
 
 .footer--link {
     color: var(--very-dark-violet);
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -445,6 +447,7 @@ footer {
     background-color: var(--very-light-gray);
     display: block;
 }
+
 
 /***************************************************
                 Responsive 
