@@ -106,6 +106,8 @@ a {
     text-align: center;
     line-height: 40px;
     cursor: pointer;
+    background: none;
+    font-family: Karla;
 }
 
 .nav-menu--button{
@@ -117,12 +119,19 @@ a {
     color: var(--very-dark-violet);
 }
 
-.intro_content--button {
+.intro_content--button,
+.findOut--button {
     padding: 0 2em;
-    background: none;
     border: 2px solid var(--very-light-gray);
 }
 
+.findOut--button{
+    color: var(--very-light-gray);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /*** states ***/
 
 .nav-menu--button:hover {
@@ -142,7 +151,7 @@ a {
     height: 80px;
 }
 
-.intro {
+.intro,.findOut{
     width: 100%;
 }
 
@@ -281,6 +290,41 @@ a {
     text-align: left;
     line-height: 180%;
 }
+
+/*** find out ***/
+
+.findOut {
+    margin: 4% 0;
+    height: 100%;
+    max-height: 250px;
+}
+
+.findOut > .container {
+    background-color: var(--dark-violet);
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.findOut--pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.findOut--left {
+    width: 80%;
+}
+
+.findOut--left > h2 {
+    color: var(--very-light-gray);
+    padding-left: 20%;
+}
+
+
+
 /***************************************************
                 Helper classes
 ****************************************************/
