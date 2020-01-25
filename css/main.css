@@ -8,8 +8,12 @@ INSUER LANDING PAGE CSS
     1.4 global
     1.5 state
 2. Layout
-    2.1 header
 3. Specific styles
+    3.1 header
+    3.2 hero 
+    3.3 different
+    3.4 find out
+    3.5 footer
 4. Helper classes
 5. Responsive
 
@@ -110,23 +114,25 @@ a {
     text-decoration: none;
 }
 
+svg {
+    fill: #837D88;
+}
+
 /*** buttons ***/
 
 .button {
     text-align: center;
-    line-height: 40px;
+    line-height: 38px;
     cursor: pointer;
     background: none;
     font-family: Karla;
 }
 
 .nav-menu--button{
-   padding: 0 1em;
+   height: 40px;
+   padding: 0  1em;
    border: 2px solid var(--very-dark-violet);
-}
-
-.nav-menu--button > a {
-    color: var(--very-dark-violet);
+   color: var(--very-dark-violet);
 }
 
 .intro_content--button,
@@ -142,20 +148,38 @@ a {
     top: 50%;
     transform: translateY(-50%);
 }
+
 /*** states ***/
 
-.nav-menu--button:hover {
-    background-color: var(--very-dark-violet);
+.nav-menu--button:hover,
+.intro_content--button:hover,
+.findOut--button:hover,
+svg:hover {
     transition: all ease 1s;
 }
 
-.nav-menu--button:hover > a {
+.nav-menu--button:hover {
+    background-color: var(--very-dark-violet);
     color: var(--very-light-gray);
 }
+
+.intro_content--button:hover,
+.findOut--button:hover  {
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-violet);
+}
+
+
+svg:hover {
+    fill: var(--dark-violet);
+}
+
+
 
 /***********************************************
                 Layout
 ***********************************************/
+
 .main-header {
     width: 100%;
     height: 80px;
@@ -192,8 +216,11 @@ footer,
     line-height: 80px;
 }
 
+.nav-menu > ul {
+    display: flex;
+}
+
 .nav-menu--item {
-    float: left;
     margin-left: 20px;
     height: 40px;
     line-height: 40px;
@@ -304,10 +331,11 @@ footer,
     line-height: 180%;
 }
 
+
 /*** find out ***/
 
 .findOut {
-    margin: 4% 0;
+    margin: 4% 0 10% 0;
     height: 100%;
     max-height: 250px;
 }
@@ -401,6 +429,7 @@ footer {
 /***************************************************
                 Helper classes
 ****************************************************/
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
